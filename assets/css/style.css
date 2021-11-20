@@ -18,7 +18,7 @@
   background-color: blue;
   text-align: center;
   position: absolute;
-  left: 43%;
+  left: 44%;
   font-size: 20px;
   padding: 5px 40px;
   color: white;
@@ -27,4 +27,37 @@
 
 #start:hover {
   background-color: purple;
+}
+
+@media screen and (max-width: 980px) {
+  body {
+    width: 100%;
+    text-align: center;
+  }
+
+  #start {
+    left: 44%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    width: 100%;
+    text-align: center;
+  }
+
+  #start {
+    left: 44%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  body {
+    width: 100%;
+    text-align: center;
+  }
+
+  #start {
+    left: 44%;
+  }
 }
