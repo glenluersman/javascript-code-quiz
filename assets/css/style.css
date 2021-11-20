@@ -18,7 +18,13 @@
   background-color: blue;
   text-align: center;
   position: absolute;
-  left: 47%;
+  left: 43%;
   font-size: 20px;
+  padding: 5px 40px;
   color: white;
+  cursor: pointer;
+}
+
+#start:hover {
+  background-color: purple;
 }
