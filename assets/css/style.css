@@ -1,28 +1,48 @@
-.container {
-  padding: 30px;
-  margin-top: 35px;
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-container {
   position: relative;
 }
 
-.title {
-  font-size: 35px;
-  text-align: center;
+#timer {
+  font-size: 20px;
 }
 
-#timer {
-  font-size: 15px;
+#score {
+  font-size: 20px;
+}
+
+.title {
+  height: 100px;
   text-align: center;
+  font-size: 45px;
+}
+
+.quiz {
+  height: 200px;
+}
+
+.results {
+  height: 200px;
 }
 
 #start {
   background-color: blue;
-  text-align: center;
-  position: absolute;
-  left: 44%;
   font-size: 20px;
-  padding: 5px 40px;
+  padding: 8px 45px;
   color: white;
   cursor: pointer;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #start:hover {
@@ -34,10 +54,6 @@
     width: 100%;
     text-align: center;
   }
-
-  #start {
-    left: 44%;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -45,19 +61,11 @@
     width: 100%;
     text-align: center;
   }
-
-  #start {
-    left: 44%;
-  }
 }
 
 @media screen and (max-width: 575px) {
   body {
     width: 100%;
     text-align: center;
-  }
-
-  #start {
-    left: 44%;
   }
 }

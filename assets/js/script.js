@@ -1,9 +1,8 @@
 // View high scores link at top of page
-// Create 5 multiple choice questions to be answered
 // Display correct or incorrect upon answer
 // Next question upon correct answer 
 // 10 seconds off clock for inccorect answer
-// Display high score after all questions answered
+// Display high score after end of quiz
 var timerEL = document.querySelector("#timer");
 var startButton = document.querySelector("#start");
 var quizContainer = document.getElementById("quiz");
@@ -77,37 +76,7 @@ var countDown = function() {
 };
 
 
-var buildQuiz = function() {
-    // variable store HTML output
-    var output = [];
-    // for each question.....
-    myQuestions.forEach(
-        (currentQuestion, questionNumber) => {
-        // variable to store the list of possible answers
-        var answers = [];
-        // for each available answer.......
-            for(letter in currentQuestion.answers){
-                // ....add an HTML radio button
-                answers.push(
-                    <label>
-                        <input type="radio" name="question${questionNumber}" value="${letter}"/>
-                        ${letter} :
-                        ${currentQuestion.answers[letter]}
-                    </label>
-                );
-            }
-
-                // add this question and its answers to the output
-                output.push(
-                    <div class="question"> ${currentQuestion.question} </div>
-                    <div class="answers"> ${answers.join('')} </div>
-                );
-        }
-    );
-    
-    // finally combine our output list into one string of HTML and put it on the page
-    quizContainer.innerHTML = output.join('');
-};
+var buildQuiz = function() {}
 
 var showResults = function() {}
 
@@ -115,5 +84,3 @@ startButton.addEventListener('click', function() {
     countDown()
     buildQuiz()
 });
-
-submitButton.addEventListener("click", showResults);
