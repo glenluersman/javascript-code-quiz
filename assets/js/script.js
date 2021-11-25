@@ -1,4 +1,5 @@
 // View high scores link at top of page
+// Display first question
 // Display correct or incorrect upon answer
 // Next question upon correct answer 
 // 10 seconds off clock for inccorect answer
@@ -66,11 +67,10 @@ var countDown = function() {
 
     var timeInterval = setInterval(function() {
         if(timeLeft > 0) {
-            timerEL.innerText = timeLeft + " seconds remaining";
+            timerEL.innerText = timeLeft + " Seconds Remaining";
             timeLeft--;
         } else {
-            timerEL.innerText = "";
-            clearInterval(timeInterval);
+            timerEL.innerText = "0 Seconds Remaining";
         }
     },1000);
 };
