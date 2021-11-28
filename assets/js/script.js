@@ -1,9 +1,3 @@
-// View high scores link at top of page
-
-
- 
-
-
 var timerEL = document.getElementById("time-counter");
 var alert = document.getElementById("alert");
 var info = document.getElementById("info");
@@ -130,7 +124,7 @@ function endgame() {
     quizQuestions.classList.add("d-none")
 };
 
-var highScores = function(a, b) {
+function highScores(a, b) {
     var userInput = {
         initials: a,
         userScore: b
