@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Code Quiz</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body class="bg-dark">
+        <header>
+            <button class="highscore btn btn-primary m-3" id="view-high-score">View High Score</button>
+            <div class="float-right m-3">    
+                <h1 class="time-counter d-none text-white" id="timer">Timer:<span id="timer">75</span></h1>
+            </div>
+        </header>
+        <div class="container d-flex justify-content-center mt-5">
+            <div class="game-box col-lg-8 p-4">
+                <div class="row pb-4">
+                    <div class="col-lg-4">
+                        <h1 class="title text-white">Javascript Code Quiz</h1>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+                <div class="quiz-questions d-none" id="quiz-questions">
+                     <h2 class="text-info text-center" id="title-item">Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
+                    <div class="answers mt-5 mb-5" id="question-answers">
+                    </div>
+                    <h3 id="alert"></h3> 
+                </div>
+                <div class="btnstart d-flex  flex-column justify-content-center mt-8 mb-10" > 
+                    <p class="text-white" id="info">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score time by 15 seconds.
+                    </p>
+                    <button class="btn btn-primary btn-lg" id="btn-start">Start Quiz</button>
+                </div>
+                
+                <div class="d-none" id="display-score">
+                    <h4 class="d-block text-white"><span id="score"></span></h4>
+                        <input type="text" class="input-from" placeholder="Enter your initials:"
+                        id="input-score">
+                        <div class="submitBtn btn btn-primary" id="btn-submit">Submit</div>
+                        <div class="restart btn btn-primary" id="btn-restart">Restart</div>
+                </div>
+            </div>    
+        </div>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
