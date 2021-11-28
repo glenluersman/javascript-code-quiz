@@ -20,9 +20,6 @@ var currentIndex = 0;
 var timeLeft = 75;
 var nextQuestion
 var scoresArray = [];
-//var score = 0;
-//var allScores = [];
-//var storedScores = JSON.parse(localStorage.getItem("userData"));
 
 // Create array of questions
 var myQuestions = [
@@ -71,8 +68,12 @@ function startQuiz() {
 function countDown() {
     
     var timeInterval = setInterval(function() {
+        if (timeLeft > 0) {
         timer.innerText = timeLeft
         timeLeft--;
+        } else {
+            endgame()
+        }
     },1000);
 };
 
@@ -100,12 +101,9 @@ function displaynextQuestion(event) {
         }else {
             currentIndex = 0
             displayQuestion(nextQuestion)  
-        }
-        
+        }   
     }else{
-        endgame()
-        
-        
+        endgame()    
     }
 };
 
