@@ -1,71 +1,19 @@
-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+#view-high-score {
+  font-size: 35px;
 }
 
-.btn-container {
-  position: relative;
+.btn:hover {
+  background-color: blueviolet;
 }
 
-#timer {
+.highscore:hover {
+  background-color: blueviolet;
+}
+
+#info {
   font-size: 20px;
 }
 
-#score {
-  font-size: 20px;
-}
-
-.title {
-  height: 100px;
-  text-align: center;
-  font-size: 45px;
-}
-
-.quiz {
-  height: 200px;
-}
-
-.results {
-  height: 200px;
-}
-
-#start {
-  background-color: blue;
-  font-size: 20px;
-  padding: 8px 45px;
-  color: white;
-  cursor: pointer;
-  position: absolute;
-  margin: 0;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-#start:hover {
-  background-color: purple;
-}
-
-@media screen and (max-width: 980px) {
-  body {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  body {
-    width: 100%;
-    text-align: center;
-  }
+.answerbtn:hover {
+  background-color: blueviolet;
 }
