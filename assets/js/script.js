@@ -12,9 +12,14 @@ var quizQuestions = document.getElementById("quiz-questions");
 var btnStart = document.getElementById("btn-start");
 var timer = document.getElementById("timer");
 var questionAnswers = document.getElementById("question-answers");
+var myScore = document.getElementById("score");
+var displayScore = document.getElementById("display-score");
+var btnSubmit = document.getElementById("btn-submit");
+var btnRestart = document.getElementById("btn-restart");
 var currentIndex = 0;
 var timeLeft = 75;
 var nextQuestion
+var scoresArray = [];
 //var score = 0;
 //var allScores = [];
 //var storedScores = JSON.parse(localStorage.getItem("userData"));
@@ -121,6 +126,28 @@ function correction(response) {
     
 };
 function endgame() {
+    myScore.innerText = timeLeft
+    displayScore.classList.remove("d-none")
     timer.classList.add("d-none")
     quizQuestions.classList.add("d-none")
 };
+
+var highScores = function(a, b) {
+    var userInput = {
+        initials: a,
+        userScore: b
+    };
+    scoresArray.push(userInput);
+
+    localStorage.setItem("userInput", JSON.stringify(scoresArray));
+};
+
+btnSubmit.addEventListener("click", function() {
+    var name = document.getElementById("input-score").value
+    
+    highScores(name, timeLeft)
+});
+
+btnRestart.addEventListener("click", function() {
+    location.href = "index.html";
+});
