@@ -1,5 +1,5 @@
 <p align="center">
- <img width=200px height=200px src="./images/logo-round-dark.png" alt="Project logo"></a>
+ <img width=200px height=200px src="./assets/images/logo-round-dark.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">Javascript-Code-Quiz</h3>
@@ -48,8 +48,8 @@ The purpose of this assignment was to create a timed coding assessment. There ar
 
 ## <img id="screenshots" src="https://github.com/teamjuli0/readme-badges/blob/main/themes/clean-dark/menu-categories/screenshots.png?raw=true" style="height: 40px">
 
-<img style="margin: 0 0 15px 0" src="./images/code-quiz-1.PNG" ></a>
+<img style="margin: 0 0 15px 0" src="./assets/images/code-quiz-1.PNG" ></a>
 
-<img style="margin: 0 0 15px 0" src="./images/code-quiz-2.PNG" ></a>
+<img style="margin: 0 0 15px 0" src="./assets/images/code-quiz-2.PNG" ></a>
 
-<img style="margin: 0 0 15px 0" src="./images/code-quiz-3.PNG" ></a>
+<img style="margin: 0 0 15px 0" src="./assets/images/code-quiz-3.PNG" ></a>
